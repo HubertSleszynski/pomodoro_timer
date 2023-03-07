@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 70%;
+  margin: auto;
+  min-height: 100vh;
+  background-color: #dce1de;
+  color: #353a47;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  padding: 0 0.5rem;
+  border: 2px solid #353a47;
+  border-radius: 0.5rem;
+  min-width: 50%;
+  text-align: center;
+  padding: 0.25 0;
+}
+
+h1 {
+  white-space: nowrap;
+}
+
+main {
+  border: 2px solid #353a47;
+  border-radius: 0.5rem;
+  min-width: 50%;
+}
+
+.clock {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.clock__part {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 3rem;
+  margin: 3rem;
+}
+
+.buttons__timer {
+  font-family: inherit;
+  background-color: inherit;
+  color: inherit;
+  font-size: 2rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  border: 2px solid #353a47;
+  border-radius: 0.5rem;
+  padding: 1rem 2.5rem;
+}
+
+.clock__math > .buttons__timer {
+  padding: 0 2rem;
+}
+
+.buttons__timer:hover {
+  background-color: #cdcfce;
+  transition: 0.5s;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  padding: 0.5rem;
+}
