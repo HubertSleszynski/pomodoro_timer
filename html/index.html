@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/app.js"></script>
+    <link rel="icon" href="../img/clock.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Pomodoro Timer</h1>
+    </header>
+    <main>
+        <div class="clock">
+            <div class="clock__math">
+                <button type="button" class="buttons__timer buttons__add60">
+                    <span class="material-icons">add</span>
+                </button>
+                <button type="button" class="buttons__timer buttons__add5">
+                    <span class="material-icons">add</span>
+                </button>
+            </div>
+            <span class="clock__part clock__part--minutes">00</span>
+            <span class="clock__part">:</span>
+            <span class="clock__part clock__part--seconds">00</span>
+            <div class="clock__math">
+                <button type="button" class="buttons__timer buttons__remove60">
+                    <span class="material-icons">remove</span>
+                </button>
+                <button type="button" class="buttons__timer buttons__remove5">
+                    <span class="material-icons">remove</span>
+                </button>
+            </div>
+        </div>
+        <div class="buttons">
+            <button type="button" class="buttons__timer buttons__control">
+                <span class="material-icons">play_arrow</span>
+            </button>
+            <button type="button" class="buttons__timer  buttons__reset">
+                <span class="material-icons">restart_alt</span>
+            </button>
+        </div>
+        <audio id="audioBell" src="../audio/service-bell_daniel_simion.mp3" type="audio/mpeg"></audio>
+        <audio id="btn-click" src="../audio/button-click-131479.mp3" type="audio/mpeg"></audio>
+    </main>
+    <footer>
+        <p>&copy; Hubert Śleszyński 2023</p>
+    </footer>
+</body>
+
+</html>
